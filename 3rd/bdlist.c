@@ -32,10 +32,8 @@ int simple_init(void) {
   /* TODO: 생일 목록을 하나씩 생성하는대로 연결리스트에 연결시키세요(노드 삽입). */
 	struct birthday *birthday = createBirthday(6,10, 1998);
 	list_add_tail(&birthday->list,&birthday_list);
-	// list_add_tail(createBirthday(21,4,2001)->list,&birthday_list);
-	// list_add_tail(createBirthday(6,16,2002)->list,&birthday_list);
-	// list_add_tail(createBirthday(9,12,2010)->list,&birthday_list);
-	// list_add_tail(createBirthday(27,2,1999)->list,&birthday_list);
+	birthday = createBirthday(14,9,1998);
+	list_add_tail(&birthday->list,&birthday_list);
 
   /* TODO: 완성된 연결리스트를 탐색하는 커널 함수를 사용하여 출력하세요. */
 	struct birthday *cur;
